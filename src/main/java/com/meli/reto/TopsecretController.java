@@ -6,11 +6,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.meli.model.Position;
-import com.meli.model.Respuesta;
-import com.meli.model.Satelite;
-import com.meli.model.SatelitesList;
-
 
 @RestController
 @RequestMapping("/topsecret")

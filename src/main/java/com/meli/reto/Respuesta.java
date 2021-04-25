@@ -1,4 +1,4 @@
-package com.meli.model;
+package com.meli.reto;
 
 public class Respuesta {
 	private Position position;

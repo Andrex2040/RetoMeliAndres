@@ -1,4 +1,4 @@
-package com.meli.model;
+package com.meli.reto;
 
 import java.util.List;
 
