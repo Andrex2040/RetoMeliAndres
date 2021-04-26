@@ -2,7 +2,7 @@ package com.meli.modelo;
 
 public class Respuesta {
 	private Position position;
-	private String[] message;
+	private String message;
 
 
 	public Position getPosition() {
@@ -12,12 +12,14 @@ public class Respuesta {
 	public void setPosition(Position position) {
 		this.position = position;
 	}
-	
-	public String[] getMessage() {
+
+	public String getMessage() {
 		return message;
 	}
 
-	public void setMessage(String[] message) {
+	public void setMessage(String message) {
 		this.message = message;
 	}
+	
+	
 }

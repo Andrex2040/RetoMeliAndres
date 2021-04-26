@@ -25,6 +25,7 @@ public class TopsecretController {
 	
 	double[][] positions = new  double[][] { posSatelite1, posSatelite2, posSatelite3 };
 	double[] distances = new double[3];
+	String[] mensajeFinal = new String[5];
 	
 	/**
 	 * METODO POST
@@ -36,27 +37,21 @@ public class TopsecretController {
 		
 		Respuesta respuesta = new Respuesta();
 		Position position = new Position();
-		int tamano = satelites.getSatellites().get(0).getMessage().length;
-		String[] mensajeFinal = new String[tamano];
+		//int tamano = satelites.getSatellites().get(0).getMessage().length;
+		//String[] mensajeFinal = new String[tamano];
 
 		int cont2 = 0;
 		for(Satelite satelite: satelites.getSatellites()) {
-			int cont = 0;
+			
 			distances[cont2] = satelite.getDistance();
-			/**
-			 * Se recorren los arreglos de los mensajes para determinar el mensaje completo
-			 */
-			for(String mensaje : satelite.getMessage()) {
-				if(mensaje!="") {
-					mensajeFinal[cont] = mensaje;
-				}
-				cont++;
-			}
+			String mensajeFinal = getMessage(satelite.getMessage());
+			
 			respuesta.setMessage(mensajeFinal);
 			cont2++;
 		}
 		
 		double[] location = getLocation(positions, distances);
+		
 		
 		position.setX(location[0]);
 		position.setY(location[1]);
@@ -76,5 +71,31 @@ public class TopsecretController {
         
         double[] centroid = optimum.getPoint().toArray();
         return  centroid;
+    }
+	
+	/**
+	 * RETORNA EL MENSAJE
+	 * @param positions
+	 * @param distances
+	 * @return
+	 */
+	private String getMessage(String[] message) {
+		int cont = 0;
+	
+		for(String mensaje : message) {
+			if(mensaje!="") {
+				mensajeFinal[cont] = mensaje;
+			}
+			cont++;
+		}
+		
+
+		System.out.println(mensajeFinal[0]+mensajeFinal[1]+mensajeFinal[2]+mensajeFinal[3]+mensajeFinal[4]);
+		String respuesta="";
+		for(String mensaje : mensajeFinal) {
+			respuesta+=mensaje+" ";
+		}
+		
+        return  respuesta.trim();
     }
 }
