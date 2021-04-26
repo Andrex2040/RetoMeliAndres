@@ -1,4 +1,4 @@
-package com.meli.reto;
+package com.meli.modelo;
 
 public class Satelite {
 	

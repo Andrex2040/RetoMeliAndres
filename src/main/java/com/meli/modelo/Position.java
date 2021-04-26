@@ -1,4 +1,4 @@
-package com.meli.reto;
+package com.meli.modelo;
 
 public class Position {
 	private Double x;
@@ -15,6 +15,4 @@ public class Position {
 	public void setY(Double y) {
 		this.y = y;
 	}
-	
-	
 }
