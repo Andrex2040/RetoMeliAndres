@@ -1,19 +1,19 @@
 OPRERACION FUEGO DE QUASAR
 
-Este proyecto busca dar solucion a un problama de comunicacion y ubicacion de una nave que esta pidiendo  auxilio, el programa esta desarrollado con servicios rest
-que guardan informacion en firebase de google.
+Este proyecto busca dar solucion a un problama de comunicacion y ubicacion de una nave que esta pidiendo  auxilio.
 
 USO DE LA APLICACION
 Existen dos servicios que permiten obtener el mensaje de la nave y su ubicacion.
 
-1. Cuando los tres satelines envian informacion al mismo tiempo para determinar el mensaje y la pocision de la nave:
+PRIMER SERVICIO
+Cuando los tres satelines envian informacion al mismo tiempo para determinar el mensaje y la pocision de la nave:
 
 Ingresa a la url
 url: https://workinginmeli.herokuapp.com/topsecret
 
 Se puede usar el aplicativo Postman para el consumo del servicio
 
-PRIMER SERVICIO
+
 ![image](https://user-images.githubusercontent.com/3359026/116325137-146c5680-a787-11eb-9cc2-1dab8391a3cb.png)
 
 ABRE UNA NUEVA VENTANA EN POSTAMAN
@@ -56,9 +56,11 @@ ABRE UNA NUEVA VENTANA EN POSTAMAN
 
 
 SEGUNDO SERVICIO
+Cuando solo un sateline envia informacion:
+
 ![image](https://user-images.githubusercontent.com/3359026/116325887-d8d28c00-a788-11eb-8942-1a2eb3e80d81.png)
 
-ABRE UNA NUEVA VENTANA EN POSTAMAN
+ABRE UNA NUEVA VENTANA EN POSTMAN
 
 1. Selecciona POST O GET
 2. ingresa la siguiente url: https://workinginmeli.herokuapp.com/topsecret_split/{satellite_name}
@@ -67,7 +69,9 @@ ABRE UNA NUEVA VENTANA EN POSTAMAN
 5. Selecciona la opcion raw 
 6. Selecciona la opcion JSON
 7. Ingresa el json con la informacion en la siguiente estructura
+
    Nota del desarrollaoor: Este mensaje del ejemplo es un frace que le dije a mi perrita Belly mientras hacia este documento :)
+   
    {
     "distance": 142.7,
     "message": ["", "", "SEA", "", "POR FAVOR"]
