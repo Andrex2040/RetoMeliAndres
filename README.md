@@ -82,7 +82,16 @@ ABRE UNA NUEVA VENTANA EN POSTMAN
 9. Ver el resultado del servicio.
 
 COMPONENTES
+SE USO LENGUAJE DE PROGRAMACION JAVA CON SPRING BOOT
+FIREBASE PARA ALMACENAR LA INFORMACION DE LOS SATELITES QUE SE REPORTAN INDIVIDUALMENTE
+SERVICIO DESPLEGADO EN SERVIDOR DE HEROKU
+
+![image](https://user-images.githubusercontent.com/3359026/116337628-0840c300-a7a0-11eb-9914-4eb9bda1d51c.png)
 
 
 LINK DE GITHUB
+
+https://github.com/Andrex2040/RetoMeliAndres.git
+
+NOTA: La rama que comtiene los cambios desplegados en produccion es la rama master
 
