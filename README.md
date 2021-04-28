@@ -95,5 +95,5 @@ LINK DE GITHUB
 
 https://github.com/Andrex2040/RetoMeliAndres.git
 
-NOTA: La rama que comtiene los cambios desplegados en produccion es la rama master
+NOTA: La rama que contiene los cambios desplegados en produccion es la rama master
 
