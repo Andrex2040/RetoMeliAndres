@@ -79,7 +79,7 @@ ABRE UNA NUEVA VENTANA EN POSTMAN
     "distance": 142.7,
     "message": ["", "", "SEA", "", "POR FAVOR"]
    }
-9. 
+9. Ver el resultado del servicio.
 
 COMPONENTES
 
